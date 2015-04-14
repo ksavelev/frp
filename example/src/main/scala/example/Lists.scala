@@ -1,7 +1,5 @@
 package example
 
-import common._
-
 object Lists {
   /**
   * This method computes the sum of all elements in the list xs. There are
@@ -31,11 +29,8 @@ object Lists {
         }
       }
 
-      xs match {
-          case head :: tail => sumImpl(head, tail)
-          case _ => 0
-      }
-    }
+      sumImpl(0, xs)
+  }
   
   /**
   * This method returns the largest element in a list of integers. If the
